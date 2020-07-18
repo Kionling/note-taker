@@ -1,0 +1,1 @@
+var journalData = require("../data/data");
