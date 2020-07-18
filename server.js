@@ -1,21 +1,22 @@
 //dependencies
 
-var fs = require("fs");
 var express = require("express");
 var app = express();
-
+var path = require("path")
 //server setup
 
-var PORT = process.env.PORT || 8000;
+var PORT = 8000;
 
 //setting up express data parsing handle
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 //Router map
 // require("./routes/apiRoutes")(app);
-// require("./routes/htmlRoutes")(app);
+require("./routes/htmlRoutes.js")(app);
 
 //server listener
 app.listen(PORT, function() {
