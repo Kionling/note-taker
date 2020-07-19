@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Router map
 // require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes.js")(app);
+require("./routes/apiRoutes.js")(app);
+
 
 //server listener
 app.listen(PORT, function() {
