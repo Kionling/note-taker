@@ -11,10 +11,10 @@ module.exports = function(app) {
         // res.sendFile(path.join(__dirname, "../public/assets/css/styles.css"));
       });
 
-      app.get("/styles", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/css/styles.css"));
-      });
-      
+    //   app.get("/styles", function(req, res) {
+    //     res.sendFile(path.join(__dirname, "../public/css/styles.css"));
+    //   });
+
     app.get("*", function(req, res) {
       res.sendFile(path.join(__dirname, "../public/index.html"));
     });
