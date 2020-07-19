@@ -1,1 +1,2 @@
-var journalData = require("../data/data");
+var path = require("path");
+const fs = require("fs");
