@@ -34,7 +34,10 @@ function addNotes(note, createdNotes){
 /// function for deleting notes
 function deleteNotes(note, id) {
     for (var i=0; i < note.length; i++){
-        
+        if (note[i].id === id) {
+            note.splice(i, 1);
+            return;
+        }
     }
 }
 
