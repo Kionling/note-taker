@@ -17,6 +17,13 @@ function getDbNotes () {
 // need a fucntion that adds notes
 function addNotes(note, createdNotes){
     var givenId = -1;
+    for (var i=0; i < note.length; i++){
+        if(note[i].id > givenId) {
+            givenId = note[i];
+        }
+    }
+    createdNotes.id = createdNotes + 1 ;
+    note.push(createdNotes)
 }
 
 //acception criteria states giving ids to notes. 
