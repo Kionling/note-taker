@@ -9,8 +9,8 @@ var PORT = process.env.PORT || 3000;
 
 //setting up express data parsing handle
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 

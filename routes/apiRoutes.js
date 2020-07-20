@@ -5,7 +5,7 @@ var app = express();
 
 //need a retrival function to retrive code from db.json file
 function getDbNotes () {
-    var notes = fs.readFileSync(path.join(__dirname, "db/db.json", "utf8"));
+    var notes = fs.readFileSync(path.join(__dirname, "../db/db.json", "utf8"));
     var letters = JSON.parse(notes);
     console.log(letters)
 }
@@ -55,7 +55,7 @@ function saveNote(note) {
 
 module.exports = function(app){
     app.get("/api/notes", function(req, res) {
-        res.json(getNotes());
+        res.json(getDbNotes());
     });
 
     app.post("/api/notes", function(req, res) {
