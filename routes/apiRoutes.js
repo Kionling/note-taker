@@ -43,7 +43,7 @@ function deleteNotes(note, id) {
 
 ///save notes functions
 function saveNote(note) {
-    
+
 }
  
 
@@ -54,5 +54,7 @@ function saveNote(note) {
 //export 
 
 module.exports = function(app){
-
+    app.get("/api/notes", function(req, res) {
+        res.json(getNotes());
+    })
 }
