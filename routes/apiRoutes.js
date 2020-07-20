@@ -42,6 +42,10 @@ function deleteNotes(note, id) {
 }
 
 ///save notes functions
+function saveNote(note) {
+    
+}
+ 
 
 
 //method for exporting api information 
