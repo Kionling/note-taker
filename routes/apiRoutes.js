@@ -32,7 +32,11 @@ function addNotes(note, createdNotes){
 
 
 /// function for deleting notes
-
+function deleteNotes(note, id) {
+    for (var i=0; i < note.length; i++){
+        
+    }
+}
 
 ///save notes functions
 
